@@ -2,6 +2,8 @@
   text-align: center;
 }
 
+
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -35,4 +37,288 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* Blanket Styles */
+.background {
+  background-color: grey;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.CV{
+  background-color: white;
+  padding: 15px;
+  border: 1px solid grey;
+  height: 1000px;
+  width: 710px;
+}
+
+fieldset{
+  border: none;
+  width: 100%;
+}
+
+input, textarea{
+  border: 1px solid grey;
+  border-radius: 5px;;
+}
+
+.buttonBox{
+  width: 125px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+label {
+  font-size: 12px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+/* CV Sections */
+
+.personalSection{
+  height: 110px;
+  width: 100%;
+  border-bottom: 1px solid grey;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.educationSection{
+  min-height: 230px;
+  max-height: 330px;
+  width: 100%;
+  border-bottom: 1px solid grey;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  
+}
+
+.experienceSection{
+  min-height: 300px;
+  max-height: 800px;
+  width: 100%;
+  border-bottom: 1px solid grey;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.submitBox{
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Personal Section */
+
+.personal{
+  height: 60%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+.name-box{
+  height: 100%;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: space-evenly;
+}
+
+.first{
+  height: 20px;
+  font-size: 18px;
+  border: none;
+}
+.last{
+  height:16px;
+  font-size: 14px;
+  border: none;
+}
+
+.email{
+  border:none;
+}
+.tel{
+  border: none;
+}
+
+/* Education Form Section */
+.education-form-box{
+  height: 70%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid grey;
+  border-radius: 5px;
+  background-color: grey;
+  color: white;
+}
+
+.education-form{
+  height: 75%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.school, .study, .year{
+  width: 250px;
+}
+
+.info{
+  display: flex;
+  flex-direction: column;
+}
+
+.edu-button-Box{
+  height: 20px;
+  width: 100%;
+  padding-left: 15px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+/* Education Display Section */
+
+.education-info{
+  height: 55px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  margin: 0px;
+  padding: 0px;
+}
+
+.edu-info-Box{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.school{
+  height: 20px;
+  margin:0px;
+  padding:0px;
+}
+
+.year, .study {
+  font-size: 12px;
+  height: 15px;
+  margin:0px;
+  padding:0px;
+}
+
+.delete-box{
+  display:flex;
+  justify-content: flex-end;
+}
+
+.delete-button{
+  border: none;
+  background-color: white;
+}
+/* Experience Form Section */
+
+.job-form-box{
+  height: 225px;
+  width: 100%;
+  display: flex;
+  border-radius: 5px;
+  background-color: grey;
+  color:white;
+}
+
+.job-form{
+  height: 185px;
+  width:100%;
+  display: flex;
+  flex-direction: column;
+}
+.info{
+  display: flex;
+  flex: column;
+}
+
+.comp-title{
+  height: 35px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  
+}
+.company, .title, .from, .until{
+  width: 250px;
+}
+
+.description-info{
+  height: 100px;
+}
+
+.period{
+  height: 35px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.job-button-box{
+  height: 20px;
+  width: 100%;
+  padding-left: 15px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+/* Job Display */
+
+.job-info{
+  min-height: 55px;
+  max-height: 100px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  margin: 0px;
+  padding: 0px;
+}
+
+.job-info-box{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.job-header{
+  height: 35px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid grey;
+}
+
+.work-dates{
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  text-align: right;
+}
+.company{
+  font-size: 14px;
+  margin: 0px;
+  padding:0px;
+}
+.from, .until, .title, .description {
+  font-size: 12px;
+  height: 15px;
+  margin:0px;
+  padding:0px;
 }
